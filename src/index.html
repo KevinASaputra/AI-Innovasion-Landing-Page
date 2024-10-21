@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Industry Landing Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+<header class="bg-blue-800 text-white fixed w-full z-20">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <h1 class="text-xl md:text-3xl font-bold">AI Innovations</h1>
+    <button id="burger-btn" class="block md:hidden focus:outline-none z-30 transition-transform duration-300">
+      <!-- Hamburger Icon -->
+      <svg id="hamburger-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 transition duration-300 ease-in-out"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+      <!-- Close Icon -->
+      <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 hidden transition duration-300 ease-in-out"
+        fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+    <nav id="side-nav"
+      class="fixed top-0 right-0 h-full bg-blue-800 text-white w-64 transform translate-x-full transition-transform duration-300 ease-in-out md:relative md:translate-x-0 md:flex md:flex-row md:w-auto md:mt-18">
+      <ul id="menu-list"
+        class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-sm md:text-base pt-20 md:pt-0 p-6 md:p-0">
+        <li><a href="#about" class="hover:text-gray-300 menu-item">About AI</a></li>
+        <li><a href="#products" class="hover:text-gray-300 menu-item">Products</a></li>
+        <li><a href="#comparison" class="hover:text-gray-300 menu-item">Comparison</a></li>
+        <li><a href="#contact" class="hover:text-gray-300 menu-item">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+  
+  <!-- Hero Section -->
+  <section class="bg-gray-800 text-white py-16 md:py-20">
+    <div class="container mx-auto text-center px-4">
+      <h2 id="typing-text" class="text-2xl md:text-4xl font-bold mb-4 mt-6 md:mt-6"></h2>
+      <p class="text-sm md:text-xl mb-6">Explore cutting-edge AI solutions designed to innovate and inspire the world.</p>
+      <a href="#products"
+        class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-3 rounded-lg transition duration-300">Explore Our
+        Products</a>
+    </div>
+  </section>
+  
+  <!-- About AI Section -->
+  <section id="about" class="py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">About AI Industry</h2>
+      <p class="text-center text-gray-600 max-w-2xl mx-auto text-sm md:text-base">Artificial Intelligence (AI) is
+        transforming the world as we know it. From automation to enhancing customer experiences, AI is at the heart of
+        modern technological advancements. Our goal is to harness the power of AI to solve real-world challenges and drive
+        innovation.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="py-12 md:py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">AI Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div
+          class="bg-white transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:shadow-xl rounded-lg shadow-lg p-6">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">AI Chatbot</h3>
+          <p class="text-gray-600 mb-4">An intelligent chatbot solution to enhance customer support and automate
+            interactions.</p>
+          <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold transition duration-300">Learn More
+            &rarr;</a>
+        </div>
+        <div
+          class="bg-white transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:shadow-xl rounded-lg shadow-lg p-6">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">AI Analytics</h3>
+          <p class="text-gray-600 mb-4">Powerful AI-driven analytics for deriving insights and data-driven decision
+            making.</p>
+          <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold transition duration-300">Learn More
+            &rarr;</a>
+        </div>
+        <div
+          class="bg-white transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:shadow-xl rounded-lg shadow-lg p-6">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">AI Vision</h3>
+          <p class="text-gray-600 mb-4">Advanced image and video analysis solutions to automate visual recognition
+            tasks.</p>
+          <a href="#" class="text-blue-600 hover:text-blue-800 font-semibold transition duration-300">Learn More
+            &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Section -->
+  <section id="comparison" class="py-12 md:py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Product Comparison</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">AI Chatbot vs AI Analytics</h3>
+          <p class="text-gray-600 mb-4">While AI Chatbot focuses on automating conversations, AI Analytics helps you
+            gain insights from your data. Both serve unique purposes in enhancing customer experience and business
+            growth.</p>
+        </div>
+        <div class="bg-gray-100 p-6 rounded-lg">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">AI Vision vs AI Analytics</h3>
+          <p class="text-gray-600 mb-4">AI Vision provides solutions for visual tasks, while AI Analytics focuses on
+            data analysis. Combining both can offer powerful automation and insight-driven strategies for your business.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-12 md:py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-2xl md:text-3xl font-bold text-center mb-6">Contact Us</h2>
+      <form id="contact-form" class="max-w-xl mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <div class="mb-4">
+          <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+          <input type="text" id="name" class="mt-1 p-2 w-full border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" class="mt-1 p-2 w-full border border-gray-300 rounded-lg" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+          <textarea id="message" rows="4" class="mt-1 p-2 w-full border border-gray-300 rounded-lg" required></textarea>
+        </div>
+        <button type="submit"
+          class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300">Send
+          Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 AI Innovations. All rights reserved.</p>
+      <nav class="mt-2">
+        <ul class="flex justify-center space-x-4">
+          <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-gray-300">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"> </script>
+  <script>
+  taiilwind.config = {
+      theme: {
+        extend: {
+          transitionProperty: {
+            width: "width",
+            spacing: "margin, padding",
+          },
+        },
+      },
+      plugins: [],
+    };</script>
+</body>
+
+</html>
